@@ -1,0 +1,159 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: open sans;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #7E7E7E;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  float: left;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4E4C4C;
+}
+
+.head {
+  list-style-type: none;
+}
+
+.account {
+  float: left;
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+}
+
+#logo {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.item {
+  float: left;
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px groove #b8b8b8;
+}
+
+.itemIcon {
+  float: left;
+  margin-left: 15px;
+}
+
+.itemText {
+  margin: 0;
+  float: left;
+  margin-left: 15px;
+  color: white;
+}
+
+.hItem:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+}
+
+.hItem:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.mainCont{
+  width: calc(100% - 200px);
+  float: right;
+}
+
+.greetCont {
+  width: calc(100% - 40px);
+  margin-right: 20px;
+  margin-left: 20px;
+  border-bottom: 1px solid lightblue;
+}
+
+#events {
+  width: 40%;
+  margin-left: 50px;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.controls {
+  padding-left: 20px;
+}
+
+.sortBy {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.title {
+  padding-left: 50px;
+}
+
+.event {
+  margin-left: 30px;
+  margin-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid lightblue;
+}
+
+.eventTitle {
+  margin-bottom: 5px;
+}
+
+.eventAddress {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 19px;
+}
+
+.eventDate {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-size: 19px;
+}
+
+.eventRank {
+  margin: 0;
+}
+
+.eventDesc {
+  font-size: 17px;
+}
