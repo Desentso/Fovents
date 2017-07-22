@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login | Fovents</title>
+  <script>addEventListener('error', window.__e=function f(e){f.q=f.q||[];f.q.push(e)});</script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/login.css') }}">
+  <link rel='shortcut icon' type='image/x-icon' href='/static/images/favicon1.ico' />
+  <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<div class="landing">
+  <div class="shade">
+  <div class="header">
+    <ul class="head">
+      <a href="/#learnMore"><li class="hItem">Features</li></a>
+      <a href="/#pricing"><li class="hItem">Pricing</li></a>
+      <a href="#"><li class="hItem">Contact</li></a>
+      <a href="#"><li class="hItem">Log In</li></a>
+    </ul>
+  </div>
+
+  <div class="formArea">
+    <h2 class="title">Login</h2>
+    <form id="login">
+      <label class="label">Username: </label>
+      <input class="field" type="name" name="username" id="name" required>
+      <label class="label">Password: </label>
+      <input class="field" type="password" name="password" id="password" required>
+      <div class="error">Username and/or password wrong. Please try again</div>
+      <input type="submit" value="Login" class="btn">
+    </form>
+  </div>
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="/static/styles/login.js"></script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="/static/styles/analyticsbundle.js"></script>
+<script async src='/static/styles/autotrack.js'></script>
+
+</body>
+</html>

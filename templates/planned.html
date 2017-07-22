@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Planned</title>
+  <script>addEventListener('error', window.__e=function f(e){f.q=f.q||[];f.q.push(e)});</script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/planned.css') }}">
+  <link rel='shortcut icon' type='image/x-icon' href='/static/images/favicon1.ico' />
+  <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+<div class="landing">
+  <div class="header">
+    <div class="account">
+
+    </div>
+      <a href="/app"><div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAACeklEQVRIS+1WS5bSUBC99XIMyAgGCkOWwBJwoETTHnEFpFfQcQUddgArkF6BeCQanHTcQe+gu2cEB83A46GjvPK8hGBIh+/AkW9ESNW9deuTeoQDzovPQVtIPgNRM3Jj9sFa13v9xN8GQ/tyGG7gAGxJIjt8rPvFOcqSw4Zg7gE08MyqswlrLxLj0/cmxGIwLxUa/rPKLA3WvLwrF3/eX0Fq1iZFZLiTG4Dez0t6PwuQgLXcYMiEwddX1aHhTi1AnsfvRNcznw6iNDLbnlmL0wggJg/PlHoy3IABdNXDJjJlMy/pleKP3w2lCKIQg8l7fwHR1sSjGWR47ZnVKDOt0cQG6JyAjyB0IhL1cslsJ2QQ+gVk2GGGTYSysonrAiT5Tz/HwdLpUuUtRMHyXlZu1P8rkozMmIzJh6Y7vAiHxMKOM7Sm5HIB8VaTVIaQlwB/g9ScdG1ySfI6xBgFAwZfjU9qvWVNlp0kHFWTljvpKb+xWYsDSZ29SZ6704YGOfTMWj03CNU8otBU6TmaRDka7sSXRD3VYeuRRt1mpTvrKCURyXJWsmqiEdgyI3unK4lMqWHGUNUmVhc4DDTGZrWdl8alzcPu2mQcOXy5qyezETUa2CehN/Jq8TewnBbeRrIaNKKO+k2gvuqurYHlzckukkjRKIiAvZOqtcv+4JrsAsxv7yPSdSjRfyUHZezfpavlBjMCPkDo3W1Dld50APn72jPwbrWsGLDzyFLgp+rCAKEPIENrZS/FRXa3r21GTXdWF4lkMybOC1BfA78BOAKfl/Re+g4Q2/9qA9IB41pdjSC4nt2M8ZchczJr+AF4/sBNLWa2iXiW3YzK/g9WUsEFHg8sZgAAAABJRU5ErkJggg==" class="itemIcon" /><p class="itemText">Check Places</p></div></a>
+      <a href="#"><div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABPUlEQVRIS+2VQU7DMBBF/7QSrboKC0qXHCFHaBeolgLiCu0NOAJHyBFyB2opFYvmBvQGsGzKgiwAUQQZZIugUmwUXIsFapbOeN7o+3+bYPmGchGDcTs96cW2mrrrZCoUl3d9NN6S504rzAb7Rd1mtrpvkP7sPmg/ra5RNsfp6UG2LUDtp+Ekn5dEo6uoO1cLWiYA06h3vg4QMr8AwC5QEnI5YnC86uwdtR9eQ5tMHxAXBrRcqgEDZwQOfMpUTfR5JmKSJ0xcbMrkNPrGJqO7fDRe72GFHMtl2Cwp8OEwI8S3jY0Qm41dZdQWTqNuUjXwnXYdRiEXGUA3aXQ4/kkmIXOnIGqIatx6fMmIKGaUoSntrjJ9yYlyUgOcEbjwdSkaLaxA6kd1h207fa2c/B/I7mU0neXuZfyVw//kZXwHsknDleKkyrUAAAAASUVORK5CYII=" class="itemIcon" /><p class="itemText">Planned</p></div></a>
+      <a href="/account"><div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABh0lEQVRIS+2UQU7CQBSG/zeSKsREWSjsxBPIDSwLBVNMuAF6AzyBegLhBnICSbSmxAX1BOINcAe6UBMVa3DGFESR0s4ICRudbef9X///vTeEKRyaAgN/EJI5vdPBeB5CJEDUAGdla3vJVolbKa70WbNAREfDgkKIvWo2XpSBpJAN8zY5A3HlK8S0VWsr2ggCSSEZs3UAYD9A5NAyYu4d3yOHnLWOQcj7KQiIUtWIFyaC+PWjL6rSF6kTvXa/OPvy1iBgwdN44NGJaAk7FX2YyIlb3Gs+rwC08i0mbt7BchfGcn3i6eoLuI7mnjpJMK6DM/t1PlSXOejXSuOS/aXKdyWI6yLc7qy5gkJwnYh1N70dDl2ruAmEbJ63ciSQJyDnP8KoEGeloCdmJKSb/7NzAiJdJY6uQ6DiRLTdUc48kM+RrRGQVAV87QxQdyJaahjkgWQkGy4FC5StbGxn8J4XYjZtgNalYr4XxKVlxH/E7IGkzWZxnKgGIxt+y5RGeHxXvcp/yK8S/ACri4Ua47I/sAAAAABJRU5ErkJggg==" class="itemIcon" /><p class="itemText">Account</p></div></a>
+      <a href="/support"><div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAB/klEQVRIS62WQW7aUBCG/3FUqOiiZNGQXX2DhhMUFi1UTtRygjY3CCdIblBuEHIDpOLWqIs4Jyi9gZc4XZAuiggRTDV2McZ5dv2At7M9M5/m/f+MTEicpu1fADgPXjO7TOjdl4pXbn3/Lhmb95lUgc2+3wXh4/IbM+6IqO1YB928heNxSogEJEFhEp1uAkqFqEBBR3uFqvNu39PpiEQDx6qIDsrT6PtDIrxafdTvRiAMoOtYlVOlPvbIA+jlSh9uD44PO7qdCETOI9Ca0/4FzUHV79bBUBMycgF6nQSpAMz4OTiuHOkAArs0+qMzIvocXQcwJHAZIDNZjIHhwKpUtSG163G5OJl5BDzPmZyqX1p+YOGmffsJ4MucEKV+WbnRnAiIwZ14R6IBUXB1kbtixbrTUqGdZ92sDWPz29jE4qEGsDkH9ZYuUk8/IBrdlwr1/4EyJz5+BduAckME2LD9HgHvVa7L6kgLEjjxz8xdXzOR+b05jJZqULUgUi4LJAt0QVRPgrQheUDERss5eeEue9wIEoEyh3i1rTeGCOiNfXtkgN30bRGCtoKkg/gGgClDvCC0toYEa+nLrxqMxXWoAd841mFNDPJ0MhvLwO4Esr7/2JuWitUnkwdzD/yDgd87g8RB4d8NymFjuNopRGq+/ep/MJg7DCoTozd9Vjj7C0Ro8VvBoKdQAAAAAElFTkSuQmCC" class="itemIcon" /><p class="itemText">Support</p></div></a>
+      <a href="/logout"><div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAACCElEQVRIS92VQW7aQBSG/+eqScUmZFHMrr1B3RvAogVliJqcIOQESU4QeoK6Jyg9QakaV3aygCPkBqG7mCzCphGhql/1MIOMGdusUNTZADOP+eZ/894/hA0M2gADTw9S69+XXzxMP01KW2eD+u543SzkKpFN9Wbyffth2ifAYeD6sbRVT67lQTMhzYuwy8TjQFVPkwB9+iSo4d26BNrxlX1sUmeECACEIzC++i273bgIr4nwRn7refkUUKDst4t4oGsCrUCa3qgN8BcAH31ld+Rk8RyAiIawoj4iqw6LX8uUryrdOCaU2POIcHi5Z/eSilYgDS8cgzEMWraTlt78cVfTEH//5SC9LooBvApa9m4m5P3P8MBifAPoWJ8wGVwE0VlIq1lSonPrK9t8VwVK5mljfZf6gMsQ73aWAl9Va6YqKVISQ1b3+F8h0oDAh3R16NStky6pTmL0pL8y7iTuEVOtyx/eeSPnGSL3L6zTK1WRcl0aujpzq2tuH0MAN9LJ6xqgjoudgcuT0raT9LLMjmfwZ/GtdUFz/zox9ViudzGTG7QqZ0WgBWDudel4I2T2bvyeutoEAe4EqvrddAfEOBf7Tzdgrnct2Yg3ajPYJWCHGWMCLy6bQQ4RygD/AqyOyYaM1WVKS/wa/jkAcw0UO+9sMA1BNJiUnveKXsmn98YXFUDW+kaU/ANT1zopqdBt8gAAAABJRU5ErkJggg==" class="itemIcon" /><p class="itemText">Logout</p></div></a>
+  </div>
+
+  <div class="mainCont">
+
+    <div class="greetCont">
+      <h1 class="title">Events you have saved</h1>
+    </div>
+
+    <div id="events">
+      <div class="controls">
+        <p class="sortBy">Sort By: </p>
+        <select>
+          <option>Date</option>
+          <option>Rank</option>
+        </select>
+      </div>
+
+     <!-- <div class="event">
+        <h2 class="eventTitle">Event title</h2>
+        <p class="eventAddress">Adress</p>
+        <p class="eventDate"> 24/1/2017 8:00 PM</p>
+        <p class="eventRank">Rank 50</p>
+        <p class="eventDesc">Description abc edef asd as dsaaaaaa s aaaaaaaa aaaaaaaas dsa dsa dsa  wwwwwwww  eee ee </p>
+      </div>
+
+      <div class="event">
+        <h2 class="eventTitle">Event title</h2>
+        <p class="eventAddress">Adress</p>
+        <p class="eventDate"> 24/1/2017 8:00 PM</p>
+        <p class="eventRank">Rank 50</p>
+        <p class="eventDesc">Description abc edef asd as dsaaaaaa s aaaaaaaa aaaaaaaas dsa dsa dsa  wwwwwwww  eee ee </p>
+      </div> -->
+
+    </div>
+  </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='styles/planned.js') }}"></script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="/static/styles/analyticsbundle.js"></script>
+<script async src='/static/styles/autotrack.js'></script>
+
+</body>
+</html>

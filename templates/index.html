@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fovents | Know the best location for your foodtruck</title>
+  <script>addEventListener('error', window.__e=function f(e){f.q=f.q||[];f.q.push(e)});</script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+  <link rel='shortcut icon' type='image/x-icon' href='/static/images/favicon1.ico' />
+  <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+
+<div class="landing">
+  <div class="shade">
+
+    <div class="headerBack">
+
+      <img src="/static/images/fovents.png" id="logo" alt="Fovents" >
+
+      <div class="header">
+        <ul class="head">
+          <a href="#learnMore"><li class="hItem">Features</li></a>
+          <a href="#pricing"><li class="hItem">Pricing</li></a>
+          <a href="#help"><li class="hItem">Contact</li></a>
+          <a href="/register"><li class="hItem">Sign Up</li></a>
+          <a href="/login"><li class="hItem">Log In</li></a>
+        </ul>
+      </div>
+
+      <div class="headerMobile">
+        <img id="burger" src="/static/images/menu.png" width="50">
+        <ul class="head">
+          <img id="close" src="/static/images/exit.png">
+          <a href="#learnMore"><li class="hItem">Features</li></a>
+          <a href="#pricing"><li class="hItem">Pricing</li></a>
+          <a href="#help"><li class="hItem">Contact</li></a>
+          <a href="/register"><li class="hItem">Sign Up</li></a>
+          <a href="/login"><li class="hItem">Log In</li></a>
+        </ul>
+      </div>
+
+    </div>
+
+  <h1 class="title">Always know the best location for your foodtruck</h1>
+  <h2 class="sTitle">Sign up for Beta now, completely free. Be one of the first ones to discover what Fovents is all about</h2>
+  <div class="buttons">
+    <a href="/register"><button class="btn">Sign up for Beta</button></a>
+    <a href="#learnMore"><button class="btn">Learn More</button></a>
+  </div>
+</div>
+</div>
+
+<a name="learnMore"></a>
+<div class="learnMore">
+  <div class="row">
+    <div class="tile"><img src="{{url_for('static', filename='images/location.png')}}" class="tImg">
+      <h3 class="tTitle">Find the best location</h3>
+      <p class="tText">Our app helps you choose the best location</p>
+    </div>
+    <div class="tile"><img src="{{url_for('static', filename='images/discover.png')}}" class="tImg">
+      <h3 class="tTitle">Discover events</h3>
+      <p class="tText">Discover major events near you, where the potential customers are</p>
+    </div>
+    <div class="tile"><img src="{{url_for('static', filename='images/boost.png')}}" class="tImg">
+      <h3 class="tTitle">Boost your sales</h3>
+      <p class="tText">Being at the right place at right time boosts your sales</p>
+    </div>   
+    <div class="tile"><img src="{{url_for('static', filename='images/plan.png')}}" class="tImg">
+      <h3 class="tTitle">Plan ahead</h3>
+      <p class="tText">You can plan ahead and save events for later retrieving</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="tile"><img src="{{url_for('static', filename='images/easy.png')}}" class="tImg">
+      <h3 class="tTitle">Easy to use</h3>
+      <p class="tText">Our app is easy and intuitive to use</p>
+    </div>  
+    <div class="tile"><img src="{{url_for('static', filename='images/mobile.png')}}" class="tImg">
+      <h3 class="tTitle">Mobile friendly</h3>
+      <p class="tText">The service is optimized for mobile devices so you can easily use it on the go</p>
+    </div>
+    <div class="tile"><img src="{{url_for('static', filename='images/happy.png')}}" class="tImg">
+      <h3 class="tTitle">Happier customers</h3>
+      <p class="tText">When you are at the right place at the right time your customers are happier</p>
+    </div>
+    <div class="tile"><img src="{{url_for('static', filename='images/support.png')}}" class="tImg">
+      <h3 class="tTitle">Quick support</h3>
+      <p class="tText">Quick and helpful support</p>
+    </div>
+  </div>
+</div>
+
+<a name="pricing"></a>
+<div class="pricing">
+  <div class="tiers">
+    <h2 class="sctTitle">Pricing</h2>
+    <a href="#help"><p class="sctHelp">Need help?</p></a>
+    <div class="tier beta">
+      <div class="topSec" id="green">
+        <h2 class="tierTitle">Beta</h2>
+        <p class="price">Free<span class="mo"></span></p>
+      </div>
+      <div class="featSec">
+        <p class="feat">Beta access is free</p>
+        <p class="feat">Find places where potential customers are</p>
+        <p class="feat">Save events and plan ahead</p>
+        <p class="feat">Support during business hours</p>
+      </div>
+      <a href="/register"><button class="btn orderBtn">Sign Up</button></a>
+    </div>
+    <!--
+    <div class="tier">
+      <div class="topSec">
+        <h2 class="tierTitle">Foodtrucks</h2>
+        <p class="price">19 € <span class="mo">/ mo.</span></p>
+      </div>
+      <div class="featSec">
+        <p class="feat">Perfect for small businesses</p>
+        <p class="feat"><b></b></p>
+        <p class="feat"><b></b></p>
+        <p class="feat">Support during business hours</p>
+      </div>
+       <a href="/register"><button class="btn orderBtn">Subscribe</button></a>
+    </div>
+   <!-- <div class="tier">
+      <div class="topSec" id="yellow">
+        <h2 class="tierTitle">Enterprise</h2>
+        <p class="price">199 € <span class="mo">/ mo.</span></p>
+      </div>
+      <div class="featSec">
+        <p class="feat">Perfect for enterprise businesses</p>
+        <p class="feat">Up to <b>50</b> idea boards</p>
+        <p class="feat">Up to <b>200</b> users</p>
+        <p class="feat">Priority support</p>
+      </div>
+       <a href="/register"><button class="btn orderBtn">Order Now</button></a>
+    </div>-->
+  </div>
+</div>
+
+<a name="help"></a>
+<div class="contactSection">
+  <div class="cnctArea">
+    <h2 class="sctTitle">Need help?</h2>
+
+  <form class="contact" id="contactForm">
+
+    <label class="ctlabel">Name</label>
+    <input name="name" type="name" class="ctinput" id="name">
+
+    <label class="ctlabel">Email *</label>
+    <input name="email" type="email" class="ctinput" id="email" required>
+
+    <label class="ctlabel">Question, Problem or/and Feedback *</label>
+    <textarea name="text" type="text" class="ctmsg" id="text" required></textarea>
+
+    <div id="submit">
+      <input type="submit" class="btn" value="Send">
+    </div>
+
+    <p id="success">Form sent succesfully! We will get back to you as soon as possible.</p>
+    <p id="error"></p>
+  </form>
+</div>
+</div>
+
+<div class="footer">
+  <div class="footCont">
+    <div class="bar">
+      <img class="logoImg" src="/static/images/fovents.png">
+    </div>
+    <div class="bar">
+      <p class="footText"><a href="/">Fovents</a></p>
+      <p class="footText"><a href="/support">Support</a></p>
+      <p class="footText"><a href="/register">Register</a></p>
+      <p class="footText"><a href="/login">Login</a></p>
+    </div>
+    <div class="bar">
+      <p class="footText"><a href="mailto:info@fovents.com">Email at info@fovents.com</a></p>
+      <p class="footText"><a href="https://twitter.com/Fovents">Twitter</a></p>
+      <p class="footText"><a href="https://www.facebook.com/Fovents-1345220745499814/">Facebook</a></p>
+    </div>
+  </div>
+  <div class="copyCont">
+    <p class="copyR">&copy; 2017 Fovents | All rights reserved.</p>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="/static/styles/analyticsbundle.js"></script>
+<script async src='/static/styles/autotrack.js'></script>
+<script async src="/static/styles/index.js"></script>
+
+</body>
+</html>
